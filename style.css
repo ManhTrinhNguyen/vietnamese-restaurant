@@ -359,6 +359,12 @@ body .menu .starters-title {
 body .menu .starters-title h1 {
   text-align: center;
 }
+body .menu .dessert-title {
+  margin-top: 50px;
+}
+body .menu .dessert-title h1 {
+  text-align: center;
+}
 body .menu .menu-container {
   margin-top: 50px;
 }
