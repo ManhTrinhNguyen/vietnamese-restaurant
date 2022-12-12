@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 a {
     text-decoration: none;
 }
@@ -333,140 +333,177 @@ body {
         margin: 0 auto;
         margin-top: 50px;
         position: relative;
-        .options-container {
-            width: 85%;
+        .entrees {
+            width: 47%;
+            background-color: rgb(237, 244, 237);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            height: 500px;
             display: flex;
-            justify-content: space-between;
-            div {
-                background-color: rgb(237, 235, 235);
-                //background-color: lightgreen;
-                border-radius: 20px;
-                width: 200px;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                transition: all 300ms;
-                &:hover {
-                    transform: scale(1.1);
-                }
-                h1 {
+            flex-direction: column;
+            cursor: pointer;
+            transition: all 300ms;
+            &:hover {
+                transform: scale(1.1);
+            }
+            h1 {
+                font-family: "Poppins:ital";
+                margin-top: 50px;
+                text-align: center;
+                
+            }
+            .entrees-title {
+                position: relative;
+                margin-bottom: 10px;
+                height: 130px;
+                h2 {
+                    position: absolute;
+                    left: 20px;
+                    top: -20px;
                     font-weight: 400;
-                    opacity: 0.7;
-                    transition: all 300ms;
-                    font-size: 24px;
-                    &:hover {
-                        opacity: 1;
-                    }
+
+                }
+                .price {
+                    position: absolute;
+                    right: 20px;
+                    top: -19px;
+                    
+                }
+                p {
+                    width: 60%;
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    opacity: 0.5;
                 }
             }
         }
-        .main-dishes-title {
+        .starters {
+           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+           width: 49%;
+           position: absolute;
+           right: 0;
+           top: 0;
+           cursor: pointer;
+           transition: all 300ms;
+            &:hover {
+                transform: scale(1.1)
+            }
+           h1 {
+                font-family: "Poppins:ital";
+                margin-top: 50px;
+                text-align: center;
+           }
+           .starters-title{
+                position: relative;
+                margin-bottom: 10px;
+                height: 130px;
+                h2 {
+                    position: absolute;
+                     left: 20px;
+                    top: -20px;
+                    font-weight: 400;
+
+                }
+                .price {
+                     position: absolute;
+                     right: 20px;
+                    top: -19px;
+                
+                }
+                p {
+                    width: 60%;
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    opacity: 0.5;
+                 }
+           }
+        }
+        .vermicelli {
+            width: 47%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            flex-direction: column;
             margin-top: 50px;
+            cursor: pointer;
+            transition: all 300ms;
+            &:hover {
+                transform: scale(1.1)
+            }
             h1 {
+                font-family: "Poppins:ital";
+                margin-top: 50px;
                 text-align: center;
             }
-        }
-        .starters-title {
-            margin-top: 50px;
-            h1 {
-                text-align: center;
-            }
-        }
-        .dessert-title {
-            margin-top: 50px;
-            h1 {
-                text-align: center;
-            }
-        }
-        .menu-container {
-            margin-top: 50px;
-            //height: 1000px;
-            .entrees {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                background-color: rgba(255, 251, 251, 0.966);
-                margin-top: 20px;
-                .meal-container {
-                    width: 30%;
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer;
-                    transition: all 300ms;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                    .entree-img{
-                        border-radius: 20px;
-                        margin-right: 30px;
-                        img {
-                            width: 150px;
-                            height: 150px;
-                            border-radius: 30px;
-                        }
-                    }
-                    .name-price-container {
-                        .name-price {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            h1 {
-                                font-weight: 400;
-                                font-size: 25px;
-                            }
-                            .meal-price {
-                                font-size: 25px;
-                            }
-                        }
-                    }
+            .vermicelli-title {
+                position: relative;
+                margin-bottom: 10px;
+                height: 130px;
+                h2 {
+                    position: absolute;
+                    left: 20px;
+                    top: -20px;
+                    font-weight: 400;
+
+                }
+                .price {
+                    position: absolute;
+                    right: 20px;
+                    top: -19px;
+                    
+                }
+                p {
+                    width: 60%;
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    opacity: 0.5;
                 }
             }
         }
-        .menu-container2 {
-            
-            //height: 1000px;
-            .entrees {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                background-color: rgba(255, 251, 251, 0.966);
-                margin-top: 20px;
-                .meal-container {
-                    width: 30%;
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer;
-                    transition: all 300ms;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                    .entree-img{
-                        border-radius: 20px;
-                        margin-right: 30px;
-                        img {
-                            width: 150px;
-                            height: 150px;
-                            border-radius: 30px;
-                        }
-                    }
-                    .name-price-container {
-                        .name-price {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            h1 {
-                                font-weight: 400;
-                                font-size: 25px;
-                            }
-                            .meal-price {
-                                font-size: 25px;
-                            }
-                        }
-                    }
-                }
+        .sandwich {
+            background-color: rgb(237, 244, 237);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            width: 49%;
+            position: absolute;
+            right: 0;
+            top: 61%;
+            margin-top: 30px;
+            transition: transform 300ms;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1)
             }
-        }
+            h1 {
+                 font-family: "Poppins:ital";
+                 margin-top: 50px;
+                 text-align: center;
+            }
+            .sandwich-title{
+                 position: relative;
+                 margin-bottom: 10px;
+                 height: 130px;
+                 h2 {
+                     position: absolute;
+                      left: 20px;
+                     top: -20px;
+                     font-weight: 400;
+ 
+                 }
+                 .price {
+                      position: absolute;
+                      right: 20px;
+                     top: -19px;
+                 
+                 }
+                 p {
+                     width: 60%;
+                     position: absolute;
+                     left: 20px;
+                     top: 20px;
+                     opacity: 0.5;
+                  }
+            }
+         }
     }
 }
