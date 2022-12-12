@@ -6,6 +6,7 @@ li {
     list-style: none;
 }
 // Javascript 
+// NavBar
 .menu-active {
     transform: translateY(0) !important;
 }
@@ -28,6 +29,7 @@ li {
     opacity: 1 !important;
     transition: opacity 600ms !important;
 }
+// Header
 .spoon-active {
     transform: rotate(0) !important;
 }
@@ -40,6 +42,10 @@ li {
 .header2-active {
     transform: translateY(20px) !important;
 }
+// Menu 
+.options-active {
+    background-color: lightgreen !important;
+}
 
 // End of Javascript
  
@@ -51,7 +57,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+   // overflow: hidden;
     // Nav Bar 
     .nav-bar {
         max-width: 375px;
@@ -316,6 +322,144 @@ body {
                 right: 20%;
         
                 transition: all 2000ms;
+            }
+        }
+    }
+
+    //Menu 
+    .menu {
+        max-width: 1440px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+        .options-container {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            div {
+                background-color: rgb(237, 235, 235);
+                //background-color: lightgreen;
+                border-radius: 20px;
+                width: 200px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 300ms;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                h1 {
+                    font-weight: 400;
+                    opacity: 0.7;
+                    transition: all 300ms;
+                    font-size: 24px;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .main-dishes-title {
+            margin-top: 50px;
+            h1 {
+                text-align: center;
+            }
+        }
+        .starters-title {
+            margin-top: 50px;
+            h1 {
+                text-align: center;
+            }
+        }
+        .menu-container {
+            margin-top: 50px;
+            //height: 1000px;
+            .entrees {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                background-color: rgba(255, 251, 251, 0.966);
+                margin-top: 20px;
+                .meal-container {
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all 300ms;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    .entree-img{
+                        border-radius: 20px;
+                        margin-right: 30px;
+                        img {
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 30px;
+                        }
+                    }
+                    .name-price-container {
+                        .name-price {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            h1 {
+                                font-weight: 400;
+                                font-size: 25px;
+                            }
+                            .meal-price {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu-container2 {
+            
+            //height: 1000px;
+            .entrees {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                background-color: rgba(255, 251, 251, 0.966);
+                margin-top: 20px;
+                .meal-container {
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all 300ms;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    .entree-img{
+                        border-radius: 20px;
+                        margin-right: 30px;
+                        img {
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 30px;
+                        }
+                    }
+                    .name-price-container {
+                        .name-price {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            h1 {
+                                font-weight: 400;
+                                font-size: 25px;
+                            }
+                            .meal-price {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

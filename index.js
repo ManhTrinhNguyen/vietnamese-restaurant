@@ -1,7 +1,9 @@
+// Navbar
 const hamburgerMenu = document.querySelector(".hamburger-menu")
 const xMenu = document.querySelector(".x-menu")
 const menuLists1 = document.querySelector(".lists1")
 const overLay = document.querySelector(".overlay1")
+// Header
 const hoverSpoon = document.querySelector(".noodles-bar-container")
 const spoon = document.querySelector(".spoon")
 const spoon2 = document.querySelector(".spoon2")
@@ -12,6 +14,12 @@ const lime = document.querySelector(".lime")
 const peanut = document.querySelector(".peanut")
 const star = document.querySelector(".star")
 const chilli = document.querySelector(".chilli")
+//Menu
+const allDishes = document.querySelector(".all-dishes")
+const starters = document.querySelector(".starters")
+const mainDishes = document.querySelector(".main-dishes")
+const drinks = document.querySelector(".drinks")
+const dessert = document.querySelector(".dessert")
 
 // Nav Bar
 hamburgerMenu.addEventListener("click", () => {
@@ -50,3 +58,40 @@ setInterval(() => {
     star.classList.toggle("header2-active")
     chilli.classList.toggle("header2-active")
 }, 1300)
+
+// Menu 
+allDishes.addEventListener("click", () => {
+    allDishes.classList.add("options-active")
+    starters.classList.remove("options-active")
+    mainDishes.classList.remove("options-active")
+    drinks.classList.remove("options-active")
+    dessert.classList.remove("options-active")
+})
+starters.addEventListener("click",()=>{ 
+    starters.classList.add("options-active")
+    allDishes.classList.remove("options-active")
+    mainDishes.classList.remove("options-active")
+    drinks.classList.remove("options-active")
+    dessert.classList.remove("options-active")
+})
+mainDishes.addEventListener("click", () => {
+    mainDishes.classList.add("options-active")
+    drinks.classList.remove("options-active")
+    dessert.classList.remove("options-active")
+    starters.classList.remove("options-active")
+    allDishes.classList.remove("options-active")
+})
+drinks.addEventListener("click", () => {
+    drinks.classList.add("options-active")
+    dessert.classList.remove("options-active")
+    starters.classList.remove("options-active")
+    allDishes.classList.remove("options-active")
+    mainDishes.classList.remove("options-active")
+})
+dessert.addEventListener("click", ()=> {
+    dessert.classList.add("options-active")
+    starters.classList.remove("options-active")
+    allDishes.classList.remove("options-active")
+    mainDishes.classList.remove("options-active")
+    drinks.classList.remove("options-active")
+})
